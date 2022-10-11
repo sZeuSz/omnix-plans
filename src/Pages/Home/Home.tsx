@@ -1,7 +1,8 @@
-import React from "react";
+import Main from "../../Components/Content/Content";
 
 export function Home () {
     return (
-        <>I'm home page...</>
+        <Main />
     )
 }
+
