@@ -21,6 +21,7 @@ export const PlansContainer = styled.div`
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
+    margin-bottom: 75px;
 `;
 
 export const Plan = styled.div`
@@ -62,4 +63,13 @@ export const Text = styled.p`
     font-size: 22px;
     color: #ffffff;
     text-align: center;
+`;
+
+export const ButtonReturn = styled.button`
+    position: fixed;
+    bottom: 15px;
+    right: 30px;
+    width: 150px;
+    height: 60px;
+    border-radius: 12px;
 `;
