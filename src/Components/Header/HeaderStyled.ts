@@ -2,14 +2,26 @@ import styled from 'styled-components';
 
 export const Top = styled.header`
     position: fixed;
-    top: 5px;
+    top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1250px;
     width: 100%;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+
+    @media(max-width: 1250px){
+        justify-content: space-evenly;
+    }
+
+    @media(max-width: 915px){
+        flex-direction: column;
+        position: static;
+        width:  90%;
+        transform: translateX(0);
+        margin: 0 auto;
+    }
 `;
 
 export const NavBar = styled.nav`
@@ -17,6 +29,12 @@ export const NavBar = styled.nav`
     justify-content: space-between;
     max-width: 500px;
     width: 100%;
+
+    @media(max-width: 915px){
+       flex-direction: column;
+       align-items: space-between;
+       margin: 20px 0px;
+    }
 `;
 
 export const Container = styled.div`
@@ -38,12 +56,26 @@ export const Logo = styled.img`
 `;
 
 export const Link = styled.a`
-color: white;
-font-size: 20px;
-weight: bold;
-cursor: pointer;
+    color: white;
+    font-size: 20px;
+    weight: bold;
+    cursor: pointer;
+    text-decoration: none;
 
-&:hover{
-    filter: brightness(80%);
-}
+    &:hover{
+        filter: brightness(80%);
+    }
+
+    @media(max-width: 915px){
+        width: none;
+        margin: 5px auto;
+    }
+`;
+
+export const HorizontalSeparator = styled.div`
+    @media(max-width: 915px){
+        width: 100%;
+        height: 1px;
+        background-color: #ffffff;
+    }    
 `;

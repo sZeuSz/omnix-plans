@@ -1,9 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Top, Container, Logo, LogoText, NavBar, Link } from "./HeaderStyled";
+import { Top, Container, Logo, LogoText, NavBar, Link, HorizontalSeparator } from "./HeaderStyled";
 export default function Header () {
 
     const navigate = useNavigate();
+    
     return (
         <Top>
             <Container onClick={() => navigate("/")}>
@@ -11,9 +12,12 @@ export default function Header () {
                 <LogoText> Omnix Plans </LogoText>
             </Container>
             <NavBar>
-                <Link>Home</Link>
-                <Link>Portifolio</Link>
-                <Link>Contact US</Link>
+                <Link onClick={() => navigate('/')}>Home</Link>
+                <HorizontalSeparator />
+                <Link href="https://github.com/sZeuSz">Portifolio</Link>
+                <HorizontalSeparator />
+                <Link href="https://github.com/sZeuSz">Contact US</Link>
+                <HorizontalSeparator />
             </NavBar>
         </Top>
     )

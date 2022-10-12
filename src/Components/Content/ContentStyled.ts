@@ -9,6 +9,16 @@ export const Paragraph = styled.p`
 export const TypeContainer = styled.div`
     text-align: center;
     width: 50%;
+    height: 79px;
+
+    @media(max-width: 1250px){
+        margin: 0 auto;
+    }
+
+    @media(max-width: 915px){
+        flex-direction: column;
+        height: 100%;
+    }
 `;
 
 export const Form = styled.form`
@@ -23,11 +33,16 @@ export const Form = styled.form`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
     margin: 35px 0 0 0;
+
+    @media(max-width: 1250px){
+        width: 90%;
+        margin: 35px auto;
+    }
 `;
 
 export const Input = styled.input`
     width: 100%;
-    height: 30px;
+    height: 35px;
     border-radius: 15px;
     padding-left: 15px;
 `;
@@ -59,5 +74,8 @@ export const Content = styled.main`
         font-size: 25px;
         color: white;
     }
-
+    
+    @media(max-width: 915px){
+        margin-top: 50px;
+    }
 `;
