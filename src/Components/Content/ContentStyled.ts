@@ -17,6 +17,7 @@ export const TypeContainer = styled.div`
 
     @media(max-width: 915px){
         flex-direction: column;
+        width: 90%;
         height: 100%;
     }
 `;
