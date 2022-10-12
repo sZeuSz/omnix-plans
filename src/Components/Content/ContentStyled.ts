@@ -72,7 +72,7 @@ export const Content = styled.main`
     margin: 145px auto 0px auto;
 
     span {
-        font-size: 25px;
+        font-size: 22px;
         color: white;
     }
     
