@@ -1,16 +1,12 @@
 import styled from 'styled-components';
 
 export const Top = styled.header`
-    position: fixed;
-    top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1250px;
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-
+    margin: 0 auto;
     @media(max-width: 1250px){
         justify-content: space-evenly;
     }
@@ -22,6 +18,9 @@ export const Top = styled.header`
         transform: translateX(0);
         margin: 0 auto;
     }
+
+    padding-top: 15px;
+
 `;
 
 export const NavBar = styled.nav`
@@ -78,4 +77,11 @@ export const HorizontalSeparator = styled.div`
         height: 1px;
         background-color: #ffffff;
     }    
+`;
+
+export const ContainerTop = styled.div`
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
